@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string password;
+    bool tieneNumero = false;
+    bool tieneMayuscula = false;
+
+    cout << "Ingrese su contraseña: ";
+    cin >> password;
+
+    // Validamos cada caracter
+    for (int i = 0; i < password.length(); i++) {
+        if (password[i] >= '0' && password[i] <= '9') {
+            tieneNumero = true;
+        }
+        if (password[i] >= 'A' && password[i] <= 'Z') {
+            tieneMayuscula = true;
+        }
+    }
+
+    if (password.length() >= 6 && tieneNumero && tieneMayuscula) {
+        cout << "Contraseña válida ✅" << endl;
+    } else {
+        cout << "Contraseña inválida ❌" << endl;
+        cout << "- Debe tener al menos 6 caracteres\n";
+        cout << "- Debe incluir al menos un número\n";
+        cout << "- Debe incluir al menos una letra mayúscula\n";
+    }
+
+    return 0;
+}
