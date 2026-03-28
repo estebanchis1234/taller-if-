@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int nota;
+
+    cout << "Ingrese la calificacion (0 - 100): ";
+    cin >> nota;
+
+    if (nota >= 90) {
+        cout << "Excelente" << endl;
+    } 
+    else if (nota >= 80) {
+        cout << "Bueno" << endl;
+    } 
+    else if (nota >= 70) {
+        cout << "Aceptable" << endl;
+    } 
+    else if (nota >= 60) {
+        cout << "Deficiente" << endl;
+    } 
+    else {
+        cout << "Reprobado" << endl;
+    }
+
+    return 0;
+}
