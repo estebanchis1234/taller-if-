@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int puntos = 0;
+    int opcion;
+
+    cout << "Sistema de puntos del juego\n";
+    cout << "Acciones disponibles:\n";
+    cout << "1. Ganar 10 puntos\n";
+    cout << "2. Ganar 20 puntos\n";
+    cout << "3. Perder 5 puntos\n";
+    cout << "Ingrese una opcion (1-3): ";
+    cin >> opcion;
+
+    if (opcion == 1) {
+        puntos = puntos + 10;
+    } 
+    else if (opcion == 2) {
+        puntos = puntos + 20;
+    } 
+    else if (opcion == 3) {
+        puntos = puntos - 5;
+    } 
+    else {
+        cout << "Opcion no valida, no se suman puntos.\n";
+    }
+
+    cout << "Puntaje final: " << puntos << endl;
+
+    return 0;
+}
