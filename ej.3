@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int opcion;
+
+    cout << "Menu de opciones:\n";
+    cout << "1. Saludar\n";
+    cout << "2. Mostrar fecha\n";
+    cout << "3. Salir\n";
+    cout << "Ingrese una opcion: ";
+    cin >> opcion;
+
+    switch(opcion) {
+        case 1:
+            cout << "Hola! Bienvenido al programa.\n";
+            break;
+        case 2:
+            cout << "Hoy es 28 de marzo de 2026.\n";
+            break;
+        case 3:
+            cout << "Saliendo del programa...\n";
+            break;
+        default:
+            cout << "Opcion no valida.\n";
+            break;
+    }
+
+    return 0;
+}
